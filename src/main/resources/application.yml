@@ -3,6 +3,13 @@ server:
   tomcat:
     uri-encoding: UTF-8
 spring:
+  thymeleaf:
+    prefix: /WEB-INF/pages/
+    mode: HTML5
+    encoding: UTF-8
+    content-type: text/html
+    cache: false
+    suffix: .html
   datasource:
     url: jdbc:mysql://120.25.58.129:3306/tongyeyun?useUnicode=true&characterEncoding=UTF-8&zerodatetimebehavior=converttonull&allowMultiQueries=true
     username: ymdu
