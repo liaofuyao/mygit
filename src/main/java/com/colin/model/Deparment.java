@@ -1,13 +1,14 @@
 package com.colin.model;
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 /**
  * Created by Colin on 2017/12/21.
  */
 @Entity
 @Table(name="deparment")
-public class Deparment {
+public class Deparment implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;

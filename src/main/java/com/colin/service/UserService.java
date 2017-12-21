@@ -33,6 +33,8 @@ public interface UserService {
      */
     public List<User> queryUsers(User user) throws RuntimeException;
 
+    public User queryUserById(Long id) throws RuntimeException;
+
     /**
      * 删除用户
      * @param id
